@@ -1,0 +1,8 @@
+{
+  "name": "@micro-services/micro-services",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "micro-services"
+  }
+}
