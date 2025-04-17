@@ -9,8 +9,11 @@ export class PostService {
     return await this.prisma.post.create({
       data: {
         title: 'post title',
-        userId: '1111',
+        userId: '6800ca1e2ec2761c003f51bc',
       },
     });
+  }
+  async getPost() {
+    return await this.prisma.post.findFirst({});
   }
 }
