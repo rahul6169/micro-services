@@ -1,0 +1,26 @@
+{
+  "name": "@micro-services/post-service-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "post-service-e2e",
+    "implicitDependencies": [
+      "post-service"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/server/post-service-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "post-service:build"
+        ]
+      }
+    }
+  }
+}

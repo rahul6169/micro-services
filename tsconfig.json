@@ -8,6 +8,24 @@
     },
     {
       "path": "./apps/micro-services"
+    },
+    {
+      "path": "./apps/server/user-service-e2e"
+    },
+    {
+      "path": "./apps/server/user-service"
+    },
+    {
+      "path": "./apps/server/post-service-e2e"
+    },
+    {
+      "path": "./apps/server/post-service"
+    },
+    {
+      "path": "./apps/server/api-gateway-e2e"
+    },
+    {
+      "path": "./apps/server/api-gateway"
     }
   ]
 }
