@@ -1,4 +1,4 @@
-import { Query, Resolver } from '@nestjs/graphql';
+import { Mutation, Query, Resolver } from '@nestjs/graphql';
 import { PostService } from './post-service';
 import { Post } from './post-model';
 
@@ -13,5 +13,10 @@ export class PostResolver {
       title: 'rahul',
       userId: 'rahul@blackflux.in',
     };
+  }
+
+  @Mutation(() => Post)
+  async createPosts() {
+    return await this.postService.createPosts();
   }
 }

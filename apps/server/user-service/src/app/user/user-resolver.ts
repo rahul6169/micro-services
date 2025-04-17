@@ -1,4 +1,4 @@
-import { Query, Resolver } from '@nestjs/graphql';
+import { Mutation, Query, Resolver } from '@nestjs/graphql';
 import { UserService } from './user-service';
 import { User } from './user-model';
 
@@ -13,5 +13,10 @@ export class UserResolver {
       name: 'rahul',
       email: 'rahul@blackflux.in',
     };
+  }
+
+  @Mutation(() => User)
+  async createUser() {
+    return await this.userService.createUser();
   }
 }
